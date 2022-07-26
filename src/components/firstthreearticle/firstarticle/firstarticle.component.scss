@@ -1,0 +1,67 @@
+.firstarticle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 11rem;
+
+  &-article {
+    margin-right: 8rem;
+
+    &-slogan {
+      font-size: 5rem;
+      font-family: "Lora", serif;
+      line-height: 8rem;
+      text-align: right;
+      font-weight: 200;
+
+      &-circle {
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        border: 0.3rem solid green;
+        border-radius: 10rem;
+      }
+    }
+
+    &-description {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.8rem;
+      opacity: 0.9;
+
+      &-name {
+        font-weight: 500;
+        text-align: right;
+        font-size: 1.5rem;
+      }
+
+      &-cofounder {
+        font-weight: 100;
+        line-height: 3rem;
+        opacity: 0.5;
+      }
+
+      &-title {
+        text-align: left;
+        letter-spacing: 0.3rem;
+        font-weight: 700;
+        color: #eb4e27;
+        margin-bottom: 1rem;
+      }
+      &-text {
+        text-align: justify;
+        line-height: 3.3rem;
+      }
+    }
+  }
+
+  &-image {
+    &-1 {
+      width: 100%;
+      height: auto;
+    }
+    &-2 {
+      margin-left: 29rem;
+      width: 55%;
+      height: auto;
+    }
+  }
+}

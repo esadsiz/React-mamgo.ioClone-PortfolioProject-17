@@ -1,0 +1,31 @@
+.asifbymagic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rem 25rem 10rem 6rem;
+  background-color: #f2f3ed;
+
+  &-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.8rem;
+    opacity: 0.9;
+    text-align: left;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    color: #eb4e27;
+  }
+
+  &-slogan {
+    font-size: 5rem;
+    font-family: "Lora", serif;
+    line-height: 8rem;
+    text-align: left;
+    font-weight: 200;
+
+    &-circle {
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+      border: 0.3rem solid green;
+      border-radius: 10rem;
+    }
+  }
+}

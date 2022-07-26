@@ -1,0 +1,108 @@
+.secondarticle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 11rem;
+
+  &-imageandcalluscard {
+    position: relative;
+
+    &-image {
+      width: 55rem;
+      height: 70rem;
+      border-radius: 25px;
+    }
+
+    &-calluscard {
+      font-family: "Lora", serif;
+      font-size: 2.5rem;
+      color: rgba(0, 0, 0, 0.9);
+
+      width: 30rem;
+      height: 40rem;
+      border-radius: 4rem;
+      padding-top: 3rem;
+      margin-left: 7rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+
+      backdrop-filter: blur(1.5rem);
+
+      position: absolute;
+      top: 5rem;
+      left: 20rem;
+
+      box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2),
+        0 1rem 2rem 0 rgba(0, 0, 0, 0.19);
+
+      &-slogan {
+        font-weight: 100;
+        margin: 1.1rem;
+
+        &-callus {
+          font-size: 1.5rem;
+          font-family: "Ubuntu", sans-serif;
+          color: #35655d;
+          font-weight: 700;
+          letter-spacing: 0.1rem;
+        }
+      }
+
+      &-hr {
+        border: 0.01rem solid rgba(0, 0, 0, 0.3);
+        margin-bottom: 0.5rem;
+      }
+
+      &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5rem;
+
+        &-self {
+          color: white;
+          padding: 1.5rem 10rem;
+          border: 1px solid #35655d;
+          border-radius: 10rem;
+          background-color: #35655d;
+        }
+      }
+    }
+  }
+
+  &-article {
+    margin-left: 8rem;
+
+    &-slogan {
+      font-size: 5rem;
+      font-family: "Lora", serif;
+      line-height: 8rem;
+      text-align: left;
+      font-weight: 200;
+
+      &-circle {
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        border: 0.3rem solid green;
+        border-radius: 10rem;
+      }
+    }
+
+    &-description {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.8rem;
+      opacity: 0.9;
+
+      &-title {
+        text-align: left;
+        letter-spacing: 0.3rem;
+        font-weight: 700;
+        color: #eb4e27;
+        margin-bottom: 1rem;
+      }
+      &-text {
+        text-align: left;
+        line-height: 3.3rem;
+      }
+    }
+  }
+}

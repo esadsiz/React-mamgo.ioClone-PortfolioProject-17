@@ -1,14 +1,11 @@
-.fourtharticle {
+.fiftharticle {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 10rem;
   margin-bottom: 10rem;
 
   &-article {
-    margin-right: 3rem;
-
     &-slogan {
       font-size: 5rem;
       font-family: "Lora", serif;
@@ -44,6 +41,7 @@
 
   &-imageandslogancard {
     position: relative;
+    margin-right: 3rem;
 
     &-image {
       width: 55rem;
@@ -77,21 +75,21 @@
 }
 
 @media screen and (min-width: 3440px) {
-  .fourtharticle {
+  .fiftharticle {
     margin-left: 31%;
     margin-right: 31%;
   }
 }
 
 @media screen and (max-width: 3439px) and (min-width: 2710px) {
-  .fourtharticle {
+  .fiftharticle {
     margin-left: 29%;
     margin-right: 29%;
   }
 }
 
 @media screen and (max-width: 2709px) and (min-width: 1440px) {
-  .fourtharticle {
+  .fiftharticle {
     margin-left: 29%;
     margin-right: 29%;
     &-article {
@@ -103,7 +101,7 @@
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1024px) {
-  .fourtharticle {
+  .fiftharticle {
     &-article {
       min-width: 55.9rem;
       max-width: 55.9rem;
@@ -131,7 +129,7 @@
 }
 
 @media screen and (max-width: 1023px) and (min-width: 895px) {
-  .fourtharticle {
+  .fiftharticle {
     &-article {
       width: 50rem;
       &-slogan {
@@ -164,7 +162,7 @@
 }
 
 @media screen and (max-width: 894px) and (min-width: 768px) {
-  .fourtharticle {
+  .fiftharticle {
     &-article {
       width: 50rem;
     }
@@ -182,10 +180,10 @@
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
-  .fourtharticle {
+  .fiftharticle {
     margin-right: 3%;
     margin-left: 3%;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 
     &-article {
@@ -238,7 +236,7 @@
 }
 
 // @media screen and (max-width: 539px) and (min-width: 320px) {
-//   .fourtharticle {
+//   .fiftharticle {
 //     margin-left: 1%;
 //     flex-direction: column;
 //     align-items: center;
@@ -284,7 +282,7 @@
 // }
 
 // @media screen and (max-width: 319px) {
-//   .fourtharticle {
+//   .fiftharticle {
 //     margin-left: 10%;
 //     flex-direction: column;
 //     align-items: center;

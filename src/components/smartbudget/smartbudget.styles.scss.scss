@@ -1,31 +1,28 @@
 .smartbudget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &-titleandslogan {
     display: flex;
-    flex-direction: row;
-    margin: 0rem 6rem 3rem 6rem;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 
     &-title {
-      padding: 0rem;
-      width: 60rem;
-      margin: 3rem 10rem 10rem 0rem;
       font-family: "Ubuntu", sans-serif;
       font-size: 1.8rem;
       opacity: 0.9;
-      text-align: left;
+      text-align: center;
       letter-spacing: 0.2rem;
       font-weight: 700;
       color: #eb4e27;
     }
 
     &-slogan {
-      width: 150rem;
-      padding-left: 10rem;
-      font-size: 5rem;
+      font-size: 4.97rem;
       font-family: "Lora", serif;
       line-height: 8rem;
-      text-align: left;
+      text-align: center;
       font-weight: 200;
     }
   }
@@ -34,26 +31,26 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin: 0rem 6rem 3rem 6rem;
+    justify-content: space-between;
 
     &-1 {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      width: 90rem;
+      width: 66rem;
+      margin-right: 5rem;
 
       &-text {
         font-family: "Ubuntu", sans-serif;
         font-size: 1.5rem;
         text-align: justify;
         letter-spacing: 0.1rem;
-        margin: 0rem 2rem 3rem 0rem;
         line-height: 2.4rem;
       }
 
       &-image {
-        width: 97%;
         border-radius: 2.5rem;
+        width: 100%;
       }
     }
 
@@ -61,20 +58,20 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      width: 66rem;
 
       &-text {
+        margin-bottom: 6.5rem;
         font-family: "Ubuntu", sans-serif;
         font-size: 1.5rem;
         text-align: justify;
         letter-spacing: 0.1rem;
-        margin: 0rem 2rem 3rem 0rem;
         line-height: 2.4rem;
       }
 
       &-image {
-        margin-top: 4.8rem;
-        width: 97%;
         border-radius: 2.5rem;
+        width: 100%;
       }
     }
   }
@@ -84,7 +81,8 @@
     flex: row;
     justify-content: center;
     align-content: flex-start;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
 
     &-casestudy {
       background-color: #13353e;
@@ -159,7 +157,7 @@
       line-height: 8rem;
       text-align: center;
       font-weight: 200;
-      margin: 0rem;
+      margin-bottom: 0rem;
     }
 
     &-thankslogotext {
@@ -173,6 +171,309 @@
     &-thankslogo {
       opacity: 0.2;
       width: 20rem;
+    }
+  }
+}
+
+@media screen and (min-width: 3440px) {
+  .smartbudget {
+  }
+}
+
+@media screen and (max-width: 3439px) and (min-width: 2710px) {
+  .smartbudget {
+  }
+}
+
+@media screen and (max-width: 2709px) and (min-width: 1440px) {
+  .smartbudget {
+  }
+}
+
+@media screen and (max-width: 1374px) and (min-width: 1024px) {
+  .smartbudget {
+    &-textandimage {
+      &-1 {
+        width: 49.5rem;
+        margin-right: 3rem;
+      }
+
+      &-2 {
+        width: 49.5rem;
+
+        &-text {
+          margin-bottom: 9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 666px) {
+  .smartbudget {
+    &-textandimage {
+      flex-direction: column;
+      align-items: center;
+      &-1 {
+        margin-right: 0rem;
+      }
+      &-2 {
+        &-text {
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 665px) and (min-width: 424px) {
+  .smartbudget {
+    &-textandimage {
+      flex-direction: column;
+      align-items: center;
+      &-1 {
+        width: 41rem;
+        margin-right: 0rem;
+      }
+      &-2 {
+        width: 41rem;
+        &-text {
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 423px) and (min-width: 320px) {
+  .smartbudget {
+    &-titleandslogan {
+      &-slogan {
+        font-size: 4rem;
+        line-height: 7rem;
+        text-align: center;
+      }
+    }
+
+    &-textandimage {
+      flex-direction: column;
+      align-items: center;
+
+      &-1 {
+        width: 31rem;
+        margin-right: 0rem;
+      }
+      &-2 {
+        width: 31rem;
+        &-text {
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+///
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .smartbudget {
+    .casestudyandimage {
+      display: flex;
+      flex: row;
+      justify-content: center;
+      align-content: flex-end;
+      margin-bottom: 10rem;
+      margin-top: 10rem;
+      width: auto;
+      height: 70rem;
+
+      &-casestudy {
+        background-color: #13353e;
+        width: 15%;
+        height: 21.4rem;
+        padding: 4rem;
+
+        &-firsttitle {
+          font-size: 1.5rem;
+        }
+        &-secondtitle {
+          font-size: 2rem;
+        }
+
+        &-description {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          margin: 0rem;
+        }
+
+        &-buttontext {
+          font-size: 1.5rem;
+
+          line-height: 2.5rem;
+        }
+      }
+
+      &-image {
+        width: auto;
+        height: 42%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .smartbudget {
+    .casestudyandimage {
+      width: auto;
+      height: 69rem;
+
+      &-casestudy {
+        width: 15%;
+        height: 20.8rem;
+        padding: 1rem;
+
+        &-firsttitle {
+          font-size: 1.2rem;
+        }
+        &-secondtitle {
+          font-size: 1.5rem;
+        }
+
+        &-description {
+          font-size: 1.2rem;
+          line-height: 1.7rem;
+        }
+
+        &-buttontext {
+          font-size: 1rem;
+          line-height: 0rem;
+        }
+      }
+
+      &-image {
+        width: auto;
+        height: 33%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  .smartbudget {
+    .casestudyandimage {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      &-casestudy {
+        width: 58rem;
+        padding: 1rem;
+        text-align: center;
+
+        &-firsttitle {
+          font-size: 3rem;
+          text-align: center;
+        }
+        &-secondtitle {
+          font-size: 3rem;
+          text-align: center;
+        }
+
+        &-description {
+          font-size: 2rem;
+          line-height: 3rem;
+          text-align: center;
+        }
+
+        &-buttontext {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+      }
+
+      &-image {
+        width: 60rem;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) and (min-width: 375px) {
+  .smartbudget {
+    .casestudyandimage {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      &-casestudy {
+        width: 33rem;
+        padding: 1rem;
+        text-align: center;
+
+        &-firsttitle {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+        &-secondtitle {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+
+        &-description {
+          font-size: 1.8rem;
+          line-height: 3rem;
+          text-align: center;
+        }
+
+        &-buttontext {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+      }
+
+      &-image {
+        width: 35rem;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 320px) {
+  .smartbudget {
+    .casestudyandimage {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      &-casestudy {
+        width: 28rem;
+        padding: 1rem;
+        text-align: center;
+
+        &-firsttitle {
+          font-size: 2rem;
+          text-align: center;
+        }
+        &-secondtitle {
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        &-description {
+          font-size: 1.8rem;
+          line-height: 3rem;
+          text-align: center;
+        }
+
+        &-buttontext {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+      }
+
+      &-image {
+        width: 30rem;
+        height: auto;
+      }
     }
   }
 }

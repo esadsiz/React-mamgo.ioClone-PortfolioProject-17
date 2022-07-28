@@ -9,6 +9,7 @@ const FirstArticle = ({ firstArticleProps }) => {
           <span className="firstarticle-article-slogan-circle">
             {firstArticleProps.slogancircle}
           </span>
+          <br />
           {firstArticleProps.sloganpart2}
         </h1>
         <div className="firstarticle-article-description">

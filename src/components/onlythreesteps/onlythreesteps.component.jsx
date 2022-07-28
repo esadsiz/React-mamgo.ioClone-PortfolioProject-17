@@ -3,16 +3,16 @@ import "./onlythreesteps.styles.scss";
 
 const OnlyThreeSteps = ({ onlyThreeStepsProps }) => {
   return (
-    <div className="threecard">
-      <h1 className="threecard-slogan">
+    <div className="onlythreesteps">
+      <h1 className="onlythreesteps-slogan">
         {onlyThreeStepsProps.slogan.part1}
-        <span className="threecard-slogan-circle">
+        <span className="onlythreesteps-slogan-circle">
           {onlyThreeStepsProps.slogan.circlepart}
         </span>
-        <br /> {onlyThreeStepsProps.slogan.part2}
+        {onlyThreeStepsProps.slogan.part2}
       </h1>
 
-      <div className="threecard-cards">
+      <div className="onlythreesteps-cards">
         <ThreeCard threeCardProps={onlyThreeStepsProps.card1} />
         <ThreeCard threeCardProps={onlyThreeStepsProps.card2} />
         <ThreeCard threeCardProps={onlyThreeStepsProps.card3} />

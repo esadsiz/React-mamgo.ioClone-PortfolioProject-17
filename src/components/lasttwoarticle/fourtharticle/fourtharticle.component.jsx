@@ -6,7 +6,7 @@ const FourthArticle = ({ fourthArticleProps }) => {
       <div className="fourtharticle-article">
         <h1 className="fourtharticle-article-slogan">
           {fourthArticleProps.slogan}
-          <br />
+
           <span className="fourtharticle-article-slogan-circle">
             {fourthArticleProps.slogancircle}
           </span>

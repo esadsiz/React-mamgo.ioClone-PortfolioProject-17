@@ -178,13 +178,13 @@ const smartBudgetObj = {
 const HomeArticle = () => {
   return (
     <div>
-      {/*<Header />
-       <FirstThreeArticle firstThreeArticleProps={firstThreeArticleObj} />
+      <Header />
+      <FirstThreeArticle firstThreeArticleProps={firstThreeArticleObj} />
       <OnlyThreeSteps onlyThreeStepsProps={onlyThreeStepsObj} />
       <Partnerships partnershipsLogosProps={partnershipsLogos} />
-  <AsIfByMagic asIfByMagicProps={asIfByMagicObj} /> */}
+      <AsIfByMagic asIfByMagicProps={asIfByMagicObj} />
       <LastTwoArticle lastTwoArticleProps={lastTwoArticleObj} />
-      {/* <SmartBudget SmartBudgetProps={smartBudgetObj} /> */}
+      <SmartBudget SmartBudgetProps={smartBudgetObj} />
     </div>
   );
 };

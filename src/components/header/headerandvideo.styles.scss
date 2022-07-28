@@ -30,8 +30,6 @@
       text-align: left;
       width: 55rem;
 
-      padding: 0rem 5rem 0rem 0rem;
-
       &-firsttitle {
         font-family: "Ubuntu", sans-serif;
         font-size: 1.8rem;
@@ -81,5 +79,51 @@
     width: 50vw;
     min-width: 100vh;
     min-height: 50vw;
+  }
+}
+
+@media screen and (max-width: 2060px) and (min-width: 320px) {
+  .headerandvideo {
+    margin: 0rem;
+    height: 50vh;
+    margin-bottom: 10rem;
+
+    &-header {
+      width: 100vw;
+      flex-direction: column;
+      justify-content: center;
+
+      &-elements {
+        align-items: center;
+        text-align: center;
+      }
+    }
+    &-video {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 555px) and (min-width: 320px) {
+  .headerandvideo {
+    &-header {
+      &-elements {
+        &-firsttitle {
+          font-size: 1.5rem;
+        }
+
+        &-slogan {
+          font-size: 3.5rem;
+          line-height: 6rem;
+        }
+        &-description {
+          font-size: 1.5rem;
+          font-weight: 200;
+          letter-spacing: 0.2rem;
+          margin: 0rem 0rem 1rem;
+          max-width: 30rem;
+        }
+      }
+    }
   }
 }

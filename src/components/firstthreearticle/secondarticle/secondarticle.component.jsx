@@ -43,7 +43,7 @@ const SecondArticle = ({ secondArticleProps }) => {
           <h5 className="secondarticle-article-description-title">
             {secondArticleProps.title}
           </h5>
-          <p className="section-1-article-description-text">
+          <p className="secondarticle-article-description-text">
             {secondArticleProps.text}
           </p>
         </div>

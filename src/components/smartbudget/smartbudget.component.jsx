@@ -23,8 +23,8 @@ const SmartBudget = ({ SmartBudgetProps }) => {
             className="smartbudget-textandimage-1-image"
           />
         </div>
-        <div className="smartbudget-textandimage-1">
-          <p className="smartbudget-textandimage-1-text">
+        <div className="smartbudget-textandimage-2">
+          <p className="smartbudget-textandimage-2-text">
             {SmartBudgetProps.text2}
           </p>
           <img
@@ -46,7 +46,7 @@ const SmartBudget = ({ SmartBudgetProps }) => {
             {SmartBudgetProps.casestudy.description}
           </h3>
           <button className="casestudyandimage-casestudy-buttontext">
-            {SmartBudgetProps.casestudy.buttontext}{" "}
+            {SmartBudgetProps.casestudy.buttontext}
             <div className="casestudyandimage-casestudy-buttontext-arrow">
               &#8599;
             </div>
@@ -58,8 +58,7 @@ const SmartBudget = ({ SmartBudgetProps }) => {
           alt="image1"
         />
       </div>
-
-      <div className="smartbudget-thanks">
+      {/* <div className="smartbudget-thanks">
         <h1 className="smartbudget-thanks-thankstext">
           {SmartBudgetProps.thankstext}
         </h1>
@@ -72,6 +71,7 @@ const SmartBudget = ({ SmartBudgetProps }) => {
           alt="logo"
         />
       </div>
+      */}
     </div>
   );
 };

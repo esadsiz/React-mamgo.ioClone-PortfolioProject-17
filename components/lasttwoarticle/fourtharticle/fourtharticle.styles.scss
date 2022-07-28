@@ -1,0 +1,330 @@
+.fourtharticle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  &-article {
+    margin-right: 3rem;
+
+    &-slogan {
+      font-size: 5rem;
+      font-family: "Lora", serif;
+      line-height: 8rem;
+      text-align: left;
+      font-weight: 200;
+
+      &-circle {
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        border: 0.3rem solid green;
+        border-radius: 10rem;
+      }
+    }
+
+    &-description {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.8rem;
+      opacity: 0.9;
+
+      &-title {
+        text-align: left;
+        letter-spacing: 0.3rem;
+        font-weight: 700;
+        color: #eb4e27;
+        margin-bottom: 1rem;
+      }
+      &-text {
+        text-align: justify;
+        line-height: 3.3rem;
+      }
+    }
+  }
+
+  &-imageandslogancard {
+    position: relative;
+
+    &-image {
+      width: 55rem;
+      height: auto;
+      border-radius: 2.5rem;
+    }
+
+    &-slogancard {
+      width: 50rem;
+      height: 15rem;
+      border-radius: 4rem;
+      backdrop-filter: blur(1.5rem);
+
+      position: absolute;
+      top: 22rem;
+      left: 3rem;
+
+      box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.2),
+        0 2rem 2rem 0 rgba(0, 0, 0, 0.2);
+
+      &-slogan {
+        font-family: "Lora", serif;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+        width: 44rem;
+        margin: 1rem 0rem 0rem 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 3440px) {
+  .fourtharticle {
+    margin-left: 31%;
+    margin-right: 31%;
+  }
+}
+
+@media screen and (max-width: 3439px) and (min-width: 2710px) {
+  .fourtharticle {
+    margin-left: 29%;
+    margin-right: 29%;
+  }
+}
+
+@media screen and (max-width: 2709px) and (min-width: 1440px) {
+  .fourtharticle {
+    margin-left: 29%;
+    margin-right: 29%;
+    &-article {
+      &-slogan {
+        width: 56rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  .fourtharticle {
+    &-article {
+      min-width: 55.9rem;
+      max-width: 55.9rem;
+    }
+    &-imageandslogancard {
+      &-image {
+        display: block;
+        width: 35rem;
+        height: auto;
+      }
+
+      &-slogancard {
+        width: 32rem;
+        height: 14rem;
+        top: 15rem;
+
+        &-slogan {
+          font-size: 2rem;
+          width: 30rem;
+          margin: 3rem 0rem 0rem 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 895px) {
+  .fourtharticle {
+    &-article {
+      width: 50rem;
+      &-slogan {
+        width: 50rem;
+      }
+    }
+
+    &-imageandslogancard {
+      &-image {
+        display: block;
+        margin-top: 4rem;
+        width: 30rem;
+        height: auto;
+      }
+
+      &-slogancard {
+        width: 30rem;
+        height: 14rem;
+        top: 15rem;
+        left: -0.5rem;
+
+        &-slogan {
+          font-size: 2rem;
+          width: 30rem;
+          margin: 3rem 0rem 0rem 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 894px) and (min-width: 768px) {
+  .fourtharticle {
+    &-article {
+      width: 50rem;
+    }
+    &-imageandslogancard {
+      &-image {
+        width: 23rem;
+        height: 46.8rem;
+      }
+
+      &-slogancard {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .fourtharticle {
+    margin-right: 3%;
+    margin-left: 3%;
+    flex-direction: column;
+    align-items: center;
+
+    &-article {
+      display: flex;
+      flex-direction: column;
+      margin-right: 0rem;
+
+      &-slogan {
+        font-size: 4rem;
+        line-height: 6rem;
+        text-align: center;
+      }
+
+      &-description {
+        font-size: 1.7rem;
+
+        &-title {
+          text-align: center;
+          letter-spacing: 0.2rem;
+          margin-bottom: 0.8rem;
+        }
+        &-text {
+          line-height: 3rem;
+        }
+      }
+    }
+
+    &-imageandslogancard {
+      position: relative;
+
+      &-image {
+        width: 36rem;
+      }
+
+      &-slogancard {
+        width: 36rem;
+        height: 10rem;
+
+        top: 12rem;
+        left: 0rem;
+
+        &-slogan {
+          font-size: 2rem;
+
+          width: 32rem;
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 539px) and (min-width: 320px) {
+//   .fourtharticle {
+//     margin-left: 1%;
+//     flex-direction: column;
+//     align-items: center;
+//     &-article {
+//       margin-left: 3rem;
+//       &-slogan {
+//         margin: 0rem;
+//         font-size: 2.76rem;
+//         line-height: 4.5rem;
+//       }
+
+//       &-description {
+//         font-size: 1.7rem;
+//         width: 31rem;
+//         max-width: 33.5rem;
+
+//         &-text {
+//           line-height: 2.5rem;
+//         }
+//       }
+//     }
+
+//     &-imageandslogancard {
+//       &-image {
+//         height: 40rem;
+//       }
+
+//       &-slogancard {
+//         width: 24rem;
+//         height: 17rem;
+
+//         position: absolute;
+//         top: 10rem;
+//         left: 4.8rem;
+
+//         &-slogan {
+//           width: 19rem;
+//           margin-top: 1.5rem;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 319px) {
+//   .fourtharticle {
+//     margin-left: 10%;
+//     flex-direction: column;
+//     align-items: center;
+//     &-article {
+//       margin-left: 3rem;
+//       &-slogan {
+//         margin: 0rem;
+//         font-size: 2.23rem;
+//         line-height: 4rem;
+//       }
+
+//       &-description {
+//         font-size: 1.7rem;
+//         width: 25rem;
+//         max-width: 33.5rem;
+
+//         &-text {
+//           line-height: 2.5rem;
+//         }
+//       }
+//     }
+
+//     &-imageandslogancard {
+//       &-image {
+//         height: 32rem;
+//       }
+
+//       &-slogancard {
+//         width: 24rem;
+//         height: 17rem;
+
+//         position: absolute;
+//         top: 6rem;
+//         left: 1rem;
+
+//         &-slogan {
+//           width: 19rem;
+//           margin-top: 1.5rem;
+//         }
+//       }
+//     }
+//   }
+// }

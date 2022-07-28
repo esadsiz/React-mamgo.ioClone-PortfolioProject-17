@@ -1,0 +1,51 @@
+.threecardcomp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  margin-right: 4rem;
+
+  &-logoandtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5rem;
+    &-logo {
+      max-width: 40%;
+    }
+
+    &-title {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      opacity: 0.9;
+      text-align: left;
+      letter-spacing: 0.2rem;
+      color: #eb4e27;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-hr {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.01rem solid rgba(0, 0, 0, 0.1);
+    padding: 0rem 3rem;
+    margin: 0rem 0rem 4rem 2rem;
+  }
+
+  &-description {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    opacity: 0.9;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    margin: 0rem 2rem 0rem 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 894px) and (min-width: 320px) {
+  .threecardcomp {
+    width: 80%;
+  }
+}

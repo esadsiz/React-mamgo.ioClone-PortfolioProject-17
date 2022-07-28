@@ -1,0 +1,153 @@
+.partnerships {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+
+  &-slogananddescription {
+    display: flex;
+    flex-direction: column;
+
+    &-slogan {
+      font-size: 5rem;
+      font-family: "Lora", serif;
+      line-height: 8rem;
+      text-align: left;
+      font-weight: 200;
+    }
+
+    &-description {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.8rem;
+      opacity: 0.9;
+    }
+  }
+  &-logos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+
+    &-logo {
+      max-width: 19.75rem;
+      min-width: 19.75rem;
+    }
+  }
+}
+
+@media screen and (min-width: 2720px) {
+  .partnerships {
+    &-slogananddescription {
+      &-slogan {
+        margin-right: 35rem;
+      }
+    }
+    &-logos {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .partnerships {
+    &-slogananddescription {
+      width: 53rem;
+    }
+    &-logos {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 894px) {
+  .partnerships {
+    &-slogananddescription {
+      justify-content: center;
+      align-items: center;
+      width: 53rem;
+    }
+
+    &-logos {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+
+      &-logo {
+        max-width: 14rem;
+        min-width: 10rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 893px) and (min-width: 768px) {
+  .partnerships {
+    &-slogananddescription {
+      justify-content: center;
+      align-items: center;
+      width: 48rem;
+    }
+
+    &-logos {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+
+      &-logo {
+        max-width: 14rem;
+        min-width: 10rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 530px) {
+  .partnerships {
+    &-slogananddescription {
+      justify-content: center;
+      align-items: center;
+      margin: 3%;
+      width: 44rem;
+    }
+
+    &-logos {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+
+      &-logo {
+        max-width: 14rem;
+        min-width: 10rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 529px) and (min-width: 320px) {
+  .partnerships {
+    flex-direction: column;
+    justify-content: center;
+    &-slogananddescription {
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      width: 29rem;
+
+      &-slogan {
+        font-size: 4rem;
+        line-height: 7rem;
+        text-align: center;
+      }
+    }
+
+    &-logos {
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
+
+      &-logo {
+        max-width: 9rem;
+        min-width: 5rem;
+      }
+    }
+  }
+}

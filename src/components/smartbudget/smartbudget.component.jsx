@@ -1,4 +1,4 @@
-import "./smartbudget.styles.scss.scss";
+import "./smartbudget.styles.scss";
 
 const SmartBudget = ({ SmartBudgetProps }) => {
   return (
@@ -34,31 +34,28 @@ const SmartBudget = ({ SmartBudgetProps }) => {
           />
         </div>
       </div>
-      <div className="casestudyandimage">
-        <div className="casestudyandimage-casestudy">
-          <h2 className="casestudyandimage-casestudy-firsttitle">
+      <div className="smartbudget-casestudyandimage">
+        <div className="smartbudget-casestudyandimage-casestudy">
+          <h2 className="smartbudget-casestudyandimage-casestudy-firsttitle">
             {SmartBudgetProps.casestudy.firsttitle}
           </h2>
-          <h2 className="casestudyandimage-casestudy-secondtitle">
+          <h2 className="smartbudget-casestudyandimage-casestudy-secondtitle">
             {SmartBudgetProps.casestudy.secondtitle}
           </h2>
-          <h3 className="casestudyandimage-casestudy-description">
+          <h3 className="smartbudget-casestudyandimage-casestudy-description">
             {SmartBudgetProps.casestudy.description}
           </h3>
-          <button className="casestudyandimage-casestudy-buttontext">
+          <button className="smartbudget-casestudyandimage-casestudy-buttontext">
             {SmartBudgetProps.casestudy.buttontext}
-            <div className="casestudyandimage-casestudy-buttontext-arrow">
-              &#8599;
-            </div>
           </button>
         </div>
         <img
-          className="casestudyandimage-image"
+          className="smartbudget-casestudyandimage-image"
           src={SmartBudgetProps.casestudy.image}
           alt="image1"
         />
       </div>
-      {/* <div className="smartbudget-thanks">
+      <div className="smartbudget-thanks">
         <h1 className="smartbudget-thanks-thankstext">
           {SmartBudgetProps.thankstext}
         </h1>
@@ -71,7 +68,6 @@ const SmartBudget = ({ SmartBudgetProps }) => {
           alt="logo"
         />
       </div>
-      */}
     </div>
   );
 };

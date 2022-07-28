@@ -104,19 +104,27 @@
 
 @media screen and (max-width: 767px) and (min-width: 530px) {
   .partnerships {
+    flex-direction: column;
+    justify-content: center;
     &-slogananddescription {
       justify-content: center;
       align-items: center;
-      margin: 3%;
-      width: 44rem;
+      margin: 0;
+      width: 29rem;
+
+      &-slogan {
+        font-size: 4rem;
+        line-height: 7rem;
+        text-align: center;
+      }
     }
 
     &-logos {
-      grid-template-columns: repeat(2, auto);
-      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
 
       &-logo {
-        max-width: 14rem;
+        max-width: 15rem;
         min-width: 10rem;
       }
     }

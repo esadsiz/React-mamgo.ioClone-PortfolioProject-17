@@ -449,53 +449,9 @@
 
 //
 
-@media screen and (max-width: 632px) and (min-width: 425px) {
-  .smartbudget {
-    &-thanks {
-      margin-right: 0rem;
-      margin-left: 0rem;
 
-      &-thankstext {
-        font-size: 3rem;
-        line-height: 5rem;
-      }
 
-      &-thankslogotext {
-        font-size: 1rem;
-      }
 
-      &-thankslogo {
-        width: 15rem;
-        margin-bottom: 1rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 520px) and (min-width: 320px) {
-  .smartbudget {
-    &-thanks {
-      width: auto;
-      margin-right: 1rem;
-      margin-left: 1rem;
-
-      &-thankstext {
-        font-size: 3rem;
-        line-height: 5rem;
-      }
-
-      &-thankslogotext {
-        opacity: 1;
-        font-size: 0.66rem;
-      }
-
-      &-thankslogo {
-        width: 15rem;
-        margin-bottom: 1rem;
-      }
-    }
-  }
-}
 
 @media screen and (max-width: 1439px) and (min-width: 1024px) {
   .smartbudget {
@@ -520,3 +476,76 @@
     }
   }
 }
+
+@media screen and (max-width: 1023px) and (min-width: 633px) {
+  .smartbudget {
+    &-thanks {
+      margin-right: 28%;
+      margin-left: 28%;
+
+      &-thankstext {
+        font-size: 3rem;
+        line-height: 5rem;
+      }
+
+      &-thankslogotext {
+        opacity: 1;
+        font-size: 0.66rem;
+      }
+
+      &-thankslogo {
+        width: 15rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 632px) and (min-width: 425px) {
+  .smartbudget {
+    &-thanks {
+      margin-right: 0rem;
+      margin-left: 0rem;
+
+      &-thankstext {
+        font-size: 3rem;
+        line-height: 5rem;
+      }
+
+      &-thankslogotext {
+        font-size: 1rem;
+      }
+
+      &-thankslogo {
+        width: 25rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .smartbudget {
+    &-thanks {
+      width: auto;
+      margin-right: 1rem;
+      margin-left: 1rem;
+
+      &-thankstext {
+        font-size: 3rem;
+        line-height: 5rem;
+      }
+
+      &-thankslogotext {
+        opacity: 1;
+        font-size: 0.66rem;
+      }
+
+      &-thankslogo {
+        width: 15rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+

@@ -17,7 +17,7 @@
 
       &-circle {
         padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-        border: 0.3rem solid green;
+        border: 0.3rem solid #376961;
         border-radius: 10rem;
       }
     }
@@ -162,7 +162,6 @@
   .firstarticlecs {
     margin-left: 1%;
     margin-right: 1%;
-
     flex-direction: column;
     align-items: center;
 
@@ -211,12 +210,13 @@
     &-image {
       display: flex;
       flex-direction: column;
+      align-items: center;
       &-1 {
         width: 30rem;
       }
 
       &-2 {
-        width: 30rem;
+        width: 20rem;
       }
     }
 

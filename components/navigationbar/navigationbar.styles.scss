@@ -1,0 +1,367 @@
+.navigationbar {
+  position: fixed;
+  z-index: 3;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:hover {
+    h2 {
+      color: #e24c26;
+    }
+
+    h3 {
+      text-decoration: underline;
+    }
+
+    &-button {
+      color: black;
+    }
+  }
+
+  a:active {
+    h2 {
+    }
+
+    h3 {
+    }
+  }
+
+  &-logo {
+    width: 44%;
+    margin: 1rem;
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    &-home {
+      font-family: "Ubuntu", sans-serif;
+      opacity: 0.9;
+      color: black;
+      margin-right: 3rem;
+    }
+    &-casestudy {
+      font-family: "Ubuntu", sans-serif;
+      opacity: 0.9;
+      color: black;
+      margin-right: 3rem;
+    }
+    &-career {
+      font-family: "Ubuntu", sans-serif;
+      opacity: 0.9;
+      color: black;
+      margin-right: 3rem;
+    }
+    &-de {
+      font-family: "Ubuntu", sans-serif;
+      opacity: 0.9;
+      color: black;
+      margin-right: 0.75rem;
+    }
+    &-en {
+      font-family: "Ubuntu", sans-serif;
+      opacity: 0.9;
+      color: black;
+      margin-right: 3rem;
+    }
+    &-button {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 0.9rem;
+      opacity: 1;
+      color: white;
+      padding: 0.05rem 2rem;
+      border: 1px solid #376961;
+      border-radius: 10rem;
+      background-color: #376961;
+    }
+  }
+}
+
+///
+///
+///
+///
+///
+///
+
+@media screen and (max-width: 1299px) and (min-width: 975px) {
+  .navigationbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:hover {
+      h2 {
+        color: #e24c26;
+      }
+
+      h3 {
+        text-decoration: underline;
+      }
+
+      &-button {
+        color: black;
+      }
+    }
+
+    a:active {
+      h2 {
+      }
+
+      h3 {
+      }
+    }
+
+    &-logo {
+      width: 44%;
+      margin: 0.5rem;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+
+      &-home {
+        margin-right: 1.5rem;
+      }
+      &-casestudy {
+        margin-right: 1.5rem;
+      }
+      &-career {
+        margin-right: 1.5rem;
+      }
+      &-de {
+        margin-right: 0.5rem;
+      }
+      &-en {
+        margin-right: 1.5rem;
+      }
+      &-button {
+        font-size: 0.75rem;
+        padding: 0.05rem 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 974px) and (min-width: 768px) {
+  .navigationbar {
+    margin-right: 0%;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:hover {
+      h2 {
+        color: #e24c26;
+      }
+
+      h3 {
+        text-decoration: underline;
+      }
+
+      &-button {
+      }
+    }
+
+    a:active {
+      h2 {
+      }
+
+      h3 {
+      }
+    }
+
+    &-logo {
+      margin: 0.5rem;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+
+      &-home {
+        margin-right: 1.5rem;
+      }
+      &-casestudy {
+        margin-right: 1.5rem;
+      }
+      &-career {
+        margin-right: 1.5rem;
+      }
+      &-de {
+        margin-right: 0.5rem;
+      }
+      &-en {
+        margin-right: 1.5rem;
+      }
+      &-button {
+        font-size: 0.75rem;
+        padding: 0.05rem 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+  .navigationbar {
+    margin-right: 0%;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:hover {
+      h2 {
+        color: #e24c26;
+      }
+
+      h3 {
+        text-decoration: underline;
+      }
+
+      &-button {
+        color: black;
+      }
+    }
+
+    a:active {
+      h2 {
+      }
+
+      h3 {
+      }
+    }
+
+    &-logo {
+      width: 66%;
+      margin: 0rem;
+      margin-left: 0.5rem;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+
+      &-home {
+        margin-right: 1rem;
+      }
+      &-casestudy {
+        margin-right: 1rem;
+      }
+      &-career {
+        margin-right: 1rem;
+      }
+      &-de {
+        margin-right: 0.25rem;
+      }
+      &-en {
+        margin-right: 1rem;
+      }
+      &-button {
+        font-size: 0.75rem;
+        padding: 0.05rem 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 424px) and (min-width: 320px) {
+  .navigationbar {
+    margin-right: 0%;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:hover {
+      h2 {
+        color: #e24c26;
+      }
+
+      h3 {
+        text-decoration: underline;
+      }
+
+      &-button {
+        color: black;
+      }
+    }
+
+    a:active {
+      h2 {
+      }
+
+      h3 {
+      }
+    }
+
+    &-logo {
+      width: 33%;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+      margin-right: 5%;
+      margin-left: 5%;
+
+      &-home {
+        margin-right: 0rem;
+      }
+      &-casestudy {
+        margin-right: 0rem;
+      }
+      &-career {
+        margin-right: 0rem;
+      }
+      &-de {
+        margin-right: 0rem;
+      }
+      &-en {
+        margin-right: 0rem;
+      }
+      &-button {
+        display: none;
+      }
+    }
+  }
+}

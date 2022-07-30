@@ -185,6 +185,7 @@
     margin-left: 3%;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
 
     &-article {
       display: flex;
@@ -212,21 +213,22 @@
     }
 
     &-imageandslogancard {
+      margin-right: 0rem;
       &-image {
-        width: 36rem;
+        width: 30rem;
       }
 
       &-slogancard {
-        width: 36rem;
-        height: 10rem;
+        width: 30rem;
+        height: 9rem;
 
         top: 12rem;
         left: 0rem;
 
         &-slogan {
-          font-size: 2rem;
+          font-size: 1.7rem;
 
-          width: 32rem;
+          width: 26rem;
         }
       }
     }

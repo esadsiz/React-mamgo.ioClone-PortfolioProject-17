@@ -7,6 +7,17 @@ import AsIfByMagic from "../asifbymagic/asifbymagic.component";
 import LastTwoArticle from "../lasttwoarticle/lasttwoarticle.component";
 import SmartBudget from "../smartbudget/smartbudget.component";
 
+const headerObj = {
+  firsttitle: "LEAN-BACK RECRUITING SOLUTION",
+  slogan: "Hire today for a",
+  slogancircle: "better tomorrow.",
+  description:
+    "We find your colleagues of tomorrow - as easy as child's play and as if by magic. The most sustainable way of recruiting.",
+  buttontext: "Start Now",
+  videolink:
+    "https://uploads-ssl.webflow.com/607eb2d6716609b9332287c3/60a27108901bfa14e30f9b43_Mamgo_KeyVisual_031_Master_MP4-transcode.webm",
+};
+
 const firstThreeArticleObj = {
   first: {
     sloganpart1: "Because",
@@ -175,18 +186,18 @@ const smartBudgetObj = {
     "https://uploads-ssl.webflow.com/607eb2d6716609b9332287c3/607ff41b13c816088e3039ac_academic_work_logo.png",
 };
 
-const HomeArticle = () => {
+const Home = () => {
   return (
-    <div>
-      <Header />
+    <div className="home">
+      <Header headerProps={headerObj} />
       <FirstThreeArticle firstThreeArticleProps={firstThreeArticleObj} />
       <OnlyThreeSteps onlyThreeStepsProps={onlyThreeStepsObj} />
       <Partnerships partnershipsLogosProps={partnershipsLogos} />
       <AsIfByMagic asIfByMagicProps={asIfByMagicObj} />
       <LastTwoArticle lastTwoArticleProps={lastTwoArticleObj} />
-      <SmartBudget SmartBudgetProps={smartBudgetObj} />
+      <SmartBudget smartBudgetProps={smartBudgetObj} />
     </div>
   );
 };
 
-export default HomeArticle;
+export default Home;

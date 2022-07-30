@@ -1,34 +1,34 @@
 import "./smartbudget.styles.scss";
 
-const SmartBudget = ({ SmartBudgetProps }) => {
+const SmartBudget = ({ smartBudgetProps }) => {
   return (
     <div className="smartbudget">
       <div className="smartbudget-titleandslogan">
         <h5 className="smartbudget-titleandslogan-title">
-          {SmartBudgetProps.title}
+          {smartBudgetProps.title}
         </h5>
         <h1 className="smartbudget-titleandslogan-slogan">
-          {SmartBudgetProps.slogan}
+          {smartBudgetProps.slogan}
         </h1>
       </div>
       <div className="smartbudget-textandimage">
         <div className="smartbudget-textandimage-1">
           <p className="smartbudget-textandimage-1-text">
-            <strong>{SmartBudgetProps.text1strong}</strong>
-            {SmartBudgetProps.text1}
+            <strong>{smartBudgetProps.text1strong}</strong>
+            {smartBudgetProps.text1}
           </p>
           <img
-            src={SmartBudgetProps.image1}
+            src={smartBudgetProps.image1}
             alt="statistic"
             className="smartbudget-textandimage-1-image"
           />
         </div>
         <div className="smartbudget-textandimage-2">
           <p className="smartbudget-textandimage-2-text">
-            {SmartBudgetProps.text2}
+            {smartBudgetProps.text2}
           </p>
           <img
-            src={SmartBudgetProps.image2}
+            src={smartBudgetProps.image2}
             alt="statistic"
             className="smartbudget-textandimage-2-image"
           />
@@ -37,34 +37,34 @@ const SmartBudget = ({ SmartBudgetProps }) => {
       <div className="smartbudget-casestudyandimage">
         <div className="smartbudget-casestudyandimage-casestudy">
           <h2 className="smartbudget-casestudyandimage-casestudy-firsttitle">
-            {SmartBudgetProps.casestudy.firsttitle}
+            {smartBudgetProps.casestudy.firsttitle}
           </h2>
           <h2 className="smartbudget-casestudyandimage-casestudy-secondtitle">
-            {SmartBudgetProps.casestudy.secondtitle}
+            {smartBudgetProps.casestudy.secondtitle}
           </h2>
           <h3 className="smartbudget-casestudyandimage-casestudy-description">
-            {SmartBudgetProps.casestudy.description}
+            {smartBudgetProps.casestudy.description}
           </h3>
           <button className="smartbudget-casestudyandimage-casestudy-buttontext">
-            {SmartBudgetProps.casestudy.buttontext}
+            {smartBudgetProps.casestudy.buttontext}
           </button>
         </div>
         <img
           className="smartbudget-casestudyandimage-image"
-          src={SmartBudgetProps.casestudy.image}
+          src={smartBudgetProps.casestudy.image}
           alt="image1"
         />
       </div>
       <div className="smartbudget-thanks">
         <h1 className="smartbudget-thanks-thankstext">
-          {SmartBudgetProps.thankstext}
+          {smartBudgetProps.thankstext}
         </h1>
         <h2 className="smartbudget-thanks-thankslogotext">
-          {SmartBudgetProps.thankslogotext}
+          {smartBudgetProps.thankslogotext}
         </h2>
         <img
           className="smartbudget-thanks-thankslogo"
-          src={SmartBudgetProps.thankslogo}
+          src={smartBudgetProps.thankslogo}
           alt="logo"
         />
       </div>

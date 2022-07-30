@@ -136,7 +136,8 @@
   }
 
   &-thanks {
-    width: 55rem;
+    margin-right: 33%;
+    margin-left: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,6 +149,7 @@
       line-height: 6rem;
       text-align: center;
       font-weight: 200;
+      text-align: center;
     }
 
     &-thankslogotext {
@@ -156,7 +158,6 @@
       font-size: 1.5rem;
       font-weight: 700;
       letter-spacing: 0.3rem;
-      text-align: center;
     }
 
     &-thankslogo {
@@ -449,9 +450,52 @@
 
 //
 
+@media screen and (max-width: 632px) and (min-width: 425px) {
+  .smartbudget {
+    &-thanks {
+      margin-right: 0rem;
+      margin-left: 0rem;
 
+      &-thankstext {
+        font-size: 3rem;
+        line-height: 5rem;
+      }
 
+      &-thankslogotext {
+        font-size: 1rem;
+      }
 
+      &-thankslogo {
+        width: 15rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 424px) and (min-width: 320px) {
+  .smartbudget {
+    &-thanks {
+      margin-right: 0rem;
+      margin-left: 0rem;
+
+      &-thankstext {
+        font-size: 3rem;
+        line-height: 5rem;
+      }
+
+      &-thankslogotext {
+        opacity: 1;
+        font-size: 0.6rem;
+      }
+
+      &-thankslogo {
+        width: 15rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1439px) and (min-width: 1024px) {
   .smartbudget {
@@ -476,76 +520,3 @@
     }
   }
 }
-
-@media screen and (max-width: 1023px) and (min-width: 633px) {
-  .smartbudget {
-    &-thanks {
-      margin-right: 0%;
-      margin-left: 0%;
-
-      &-thankstext {
-        font-size: 3rem;
-        line-height: 5rem;
-      }
-
-      &-thankslogotext {
-        opacity: 1;
-        font-size: 0.66rem;
-      }
-
-      &-thankslogo {
-        width: 35rem;
-        margin-bottom: 1rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 632px) and (min-width: 425px) {
-  .smartbudget {
-    &-thanks {
-      margin-right: 0rem;
-      margin-left: 0rem;
-
-      &-thankstext {
-        font-size: 3rem;
-        line-height: 5rem;
-      }
-
-      &-thankslogotext {
-        font-size: 1rem;
-      }
-
-      &-thankslogo {
-        width: 25rem;
-        margin-bottom: 1rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 425px) and (min-width: 320px) {
-  .smartbudget {
-    &-thanks {
-      width: auto;
-      margin-right: 1rem;
-      margin-left: 1rem;
-
-      &-thankstext {
-        font-size: 3rem;
-        line-height: 5rem;
-      }
-
-      &-thankslogotext {
-        opacity: 1;
-        font-size: 0.66rem;
-      }
-
-      &-thankslogo {
-        width: 15rem;
-        margin-bottom: 1rem;
-      }
-    }
-  }
-}
-

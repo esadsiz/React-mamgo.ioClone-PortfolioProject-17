@@ -1,11 +1,14 @@
-.fiftharticle {
+.firstsection {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 10rem;
   margin-bottom: 10rem;
 
   &-article {
+    margin-right: 3rem;
+
     &-slogan {
       font-size: 5rem;
       font-family: "Lora", serif;
@@ -41,7 +44,6 @@
 
   &-imageandslogancard {
     position: relative;
-    margin-right: 3rem;
 
     &-image {
       width: 55rem;
@@ -75,21 +77,21 @@
 }
 
 @media screen and (min-width: 3440px) {
-  .fiftharticle {
+  .firstsection {
     margin-left: 31%;
     margin-right: 31%;
   }
 }
 
 @media screen and (max-width: 3439px) and (min-width: 2710px) {
-  .fiftharticle {
+  .firstsection {
     margin-left: 29%;
     margin-right: 29%;
   }
 }
 
 @media screen and (max-width: 2709px) and (min-width: 1440px) {
-  .fiftharticle {
+  .firstsection {
     margin-left: 29%;
     margin-right: 29%;
     &-article {
@@ -101,7 +103,7 @@
 }
 
 @media screen and (max-width: 1439px) and (min-width: 1024px) {
-  .fiftharticle {
+  .firstsection {
     &-article {
       min-width: 55.9rem;
       max-width: 55.9rem;
@@ -129,7 +131,7 @@
 }
 
 @media screen and (max-width: 1023px) and (min-width: 895px) {
-  .fiftharticle {
+  .firstsection {
     &-article {
       width: 50rem;
       &-slogan {
@@ -162,7 +164,7 @@
 }
 
 @media screen and (max-width: 894px) and (min-width: 768px) {
-  .fiftharticle {
+  .firstsection {
     &-article {
       width: 50rem;
     }
@@ -180,12 +182,11 @@
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
-  .fiftharticle {
+  .firstsection {
     margin-right: 3%;
     margin-left: 3%;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     &-article {
       display: flex;
@@ -213,22 +214,23 @@
     }
 
     &-imageandslogancard {
-      margin-right: 0rem;
+      position: relative;
+
       &-image {
-        width: 30rem;
+        width: 36rem;
       }
 
       &-slogancard {
-        width: 30rem;
-        height: 9rem;
+        width: 36rem;
+        height: 10rem;
 
         top: 12rem;
         left: 0rem;
 
         &-slogan {
-          font-size: 1.7rem;
+          font-size: 2rem;
 
-          width: 26rem;
+          width: 32rem;
         }
       }
     }
@@ -236,7 +238,7 @@
 }
 
 // @media screen and (max-width: 539px) and (min-width: 320px) {
-//   .fiftharticle {
+//   .firstsection {
 //     margin-left: 1%;
 //     flex-direction: column;
 //     align-items: center;
@@ -282,7 +284,7 @@
 // }
 
 // @media screen and (max-width: 319px) {
-//   .fiftharticle {
+//   .firstsection {
 //     margin-left: 10%;
 //     flex-direction: column;
 //     align-items: center;

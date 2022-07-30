@@ -1,4 +1,4 @@
-.headerandvideo {
+.casestudyheader {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -48,12 +48,6 @@
         line-height: 8rem;
         font-weight: 200;
         margin: 0rem 0rem 3rem 0rem;
-
-        &-circle {
-          padding: 0.06rem 1.5rem 0.06rem 1.5rem;
-          border: 0.3rem solid #376961;
-          border-radius: 10rem;
-        }
       }
       &-description {
         font-size: 2rem;
@@ -61,16 +55,27 @@
         letter-spacing: 0.2rem;
         margin: 0rem 0rem 3rem;
       }
-      &-button {
-        margin-top: 1.5rem;
-        &-self {
-          font-size: 2rem;
-          color: white;
-          padding: 1.5rem 5rem;
-          border: 1px solid #e24c26;
-          border-radius: 10rem;
-          background-color: #e24c26;
-        }
+
+      &-description2 {
+        font-size: 1.8rem;
+        font-weight: 200;
+        letter-spacing: 0.2rem;
+        margin: 0rem 0rem 3rem;
+      }
+
+      &-sign {
+        font-family: "Ubuntu", sans-serif;
+        color: #376961;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 0rem;
+        margin: 0rem 0rem 3rem;
+      }
+
+      &-logo {
+        width: 25rem;
+        opacity: 0.5;
+        align-self: center;
       }
     }
   }
@@ -83,7 +88,7 @@
 }
 
 @media screen and (max-width: 2060px) and (min-width: 320px) {
-  .headerandvideo {
+  .casestudyheader {
     margin: 0rem;
     height: 50vh;
     margin-bottom: 10rem;
@@ -105,7 +110,7 @@
 }
 
 @media screen and (max-width: 555px) and (min-width: 320px) {
-  .headerandvideo {
+  .casestudyheader {
     &-header {
       &-elements {
         &-firsttitle {
@@ -118,6 +123,14 @@
         }
         &-description {
           font-size: 1.5rem;
+          font-weight: 200;
+          letter-spacing: 0.2rem;
+          margin: 0rem 0rem 1rem;
+          max-width: 30rem;
+        }
+
+        &-description2 {
+          font-size: 1.2rem;
           font-weight: 200;
           letter-spacing: 0.2rem;
           margin: 0rem 0rem 1rem;

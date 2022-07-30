@@ -81,7 +81,7 @@ const onlyThreeStepsObj = {
   },
 
   card2: {
-    logo: "https://uploads-ssl.webflow.com/607eb2d6716609b9332287c3/609ea6b9a87000f0cc03946c_einfach.png",
+    logo: "https://uploads-ssl.webflow.com/607eb2d6716609b9332287c3/609eaabdf4811723b18dcb4a_waage.png",
     title: "YOUR JOB ADS ALL OVER THE WEB.",
     description:
       "How many web- and social media sites have you visited today? Your potential applicants are no different and that's why mamgo posts fully automated and smart ads only where your candidates actually see it at any given moment.",

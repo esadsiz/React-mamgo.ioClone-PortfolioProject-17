@@ -171,7 +171,7 @@
     margin-left: 1%;
     margin-right: 1%;
 
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 
     &-article {
@@ -203,6 +203,7 @@
       }
 
       &-2 {
+        display: none;
         width: 16.5rem;
       }
     }
@@ -214,7 +215,7 @@
     margin-left: 1%;
     margin-right: 1%;
 
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 
     &-article {
@@ -246,6 +247,7 @@
       }
 
       &-2 {
+        display: none;
         width: 15rem;
       }
     }

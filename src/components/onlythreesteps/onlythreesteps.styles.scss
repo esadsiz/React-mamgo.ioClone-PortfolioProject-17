@@ -1,0 +1,84 @@
+.onlythreesteps {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f2f3ed;
+  padding-bottom: 1rem;
+  margin-bottom: 10rem;
+
+  &-slogan {
+    font-size: 5rem;
+    font-family: "Lora", serif;
+    line-height: 8rem;
+    text-align: center;
+    font-weight: 200;
+
+    &-circle {
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+      border: 0.3rem solid #376961;
+      border-radius: 10rem;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1023px) {
+  .onlythreesteps {
+    &-slogan {
+      font-size: 4rem;
+      line-height: 7rem;
+    }
+
+    &-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .onlythreesteps {
+    &-slogan {
+      font-size: 2.7rem;
+      line-height: 5rem;
+    }
+
+    &-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .onlythreesteps {
+    &-slogan {
+      font-size: 2.7rem;
+      line-height: 5rem;
+    }
+
+    &-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .onlythreesteps {
+    &-slogan {
+      font-size: 2.5rem;
+      line-height: 4.5rem;
+    }
+
+    &-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

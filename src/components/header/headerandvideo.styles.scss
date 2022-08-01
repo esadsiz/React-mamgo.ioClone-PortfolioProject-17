@@ -1,0 +1,129 @@
+.headerandvideo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 99.5w;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+
+  &-header {
+    background-color: #13353e;
+    height: 100vh;
+    width: 50vw;
+    min-width: 100vh;
+    min-height: 50vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-elements {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      color: white;
+      text-align: left;
+      width: 55rem;
+
+      &-firsttitle {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.8rem;
+        opacity: 0.9;
+        text-align: left;
+        letter-spacing: 0.25rem;
+        font-weight: 700;
+        color: #eb4e27;
+        padding: 0rem;
+        margin: 0rem;
+      }
+
+      &-slogan {
+        font-size: 6rem;
+        font-family: "Lora", serif;
+        line-height: 8rem;
+        font-weight: 200;
+        margin: 0rem 0rem 3rem 0rem;
+
+        &-circle {
+          padding: 0.06rem 1.5rem 0.06rem 1.5rem;
+          border: 0.3rem solid #376961;
+          border-radius: 10rem;
+        }
+      }
+      &-description {
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 0.2rem;
+        margin: 0rem 0rem 3rem;
+      }
+      &-button {
+        margin-top: 1.5rem;
+        &-self {
+          font-size: 2rem;
+          color: white;
+          padding: 1.5rem 5rem;
+          border: 1px solid #e24c26;
+          border-radius: 10rem;
+          background-color: #e24c26;
+        }
+      }
+    }
+  }
+  &-video {
+    height: 100vh;
+    width: 50vw;
+    min-width: 100vh;
+    min-height: 50vw;
+  }
+}
+
+@media screen and (max-width: 2060px) and (min-width: 320px) {
+  .headerandvideo {
+    height: 50vh;
+    margin-bottom: 10rem;
+
+    &-header {
+      width: 100vw;
+      flex-direction: column;
+      justify-content: center;
+
+      &-elements {
+        align-items: center;
+        text-align: center;
+      }
+    }
+    &-video {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 555px) and (min-width: 320px) {
+  .headerandvideo {
+    &-header {
+      &-elements {
+        &-firsttitle {
+          font-size: 1.5rem;
+        }
+
+        &-slogan {
+          font-size: 3.5rem;
+          line-height: 6rem;
+        }
+        &-description {
+          font-size: 1.5rem;
+          font-weight: 200;
+          letter-spacing: 0.2rem;
+          margin: 0rem 0rem 1rem;
+          max-width: 30rem;
+        }
+      }
+    }
+  }
+}

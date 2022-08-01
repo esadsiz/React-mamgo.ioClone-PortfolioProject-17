@@ -1,0 +1,296 @@
+.secondarticle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10rem;
+
+  &-imageandcalluscard {
+    position: relative;
+
+    &-image {
+      width: 55rem;
+      height: auto;
+      border-radius: 2.5rem;
+    }
+
+    &-calluscard {
+      width: 30rem;
+      height: 36rem;
+      font-family: "Lora", serif;
+      font-size: 2.5rem;
+      color: rgba(0, 0, 0, 0.9);
+      border-radius: 4rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      backdrop-filter: blur(1.5rem);
+      position: absolute;
+      top: 20rem;
+      left: 12rem;
+      box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2),
+        0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+
+      &-slogan {
+        font-weight: 100;
+        margin: 1rem;
+
+        &-callus {
+          font-size: 1.5rem;
+          font-family: "Ubuntu", sans-serif;
+          color: #35655d;
+          font-weight: 700;
+          letter-spacing: 0.1rem;
+        }
+      }
+
+      &-hr {
+        border: 0.01rem solid rgba(0, 0, 0, 0.3);
+        margin-bottom: 0.5rem;
+      }
+
+      &-button {
+        margin-top: 2rem;
+        text-align: center;
+
+        &-self {
+          color: white;
+          padding: 1.5rem 10rem;
+          border: 0.1rem solid #35655d;
+          border-radius: 10rem;
+          background-color: #35655d;
+        }
+      }
+    }
+  }
+
+  &-article {
+    margin-left: 3rem;
+
+    &-slogan {
+      font-size: 5rem;
+      font-family: "Lora", serif;
+      line-height: 8rem;
+      text-align: left;
+      font-weight: 200;
+
+      &-circle {
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        border: 0.3rem solid #376961;
+        border-radius: 10rem;
+      }
+    }
+
+    &-description {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.8rem;
+      opacity: 0.9;
+
+      &-title {
+        text-align: left;
+        letter-spacing: 0.3rem;
+        font-weight: 700;
+        color: #eb4e27;
+        margin-bottom: 1rem;
+      }
+      &-text {
+        text-align: justify;
+        line-height: 3.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 3441px) {
+  .secondarticle {
+    margin-left: 31%;
+    margin-right: 31%;
+  }
+}
+
+@media screen and (max-width: 3440px) and (min-width: 2561px) {
+  .secondarticle {
+    margin-left: 27%;
+    margin-right: 27%;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 2108px) {
+  .secondarticle {
+    margin-left: 23%;
+    margin-right: 23%;
+  }
+}
+
+@media screen and (max-width: 2107px) and (min-width: 1441px) {
+  .secondarticle {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1023px) {
+  .secondarticle {
+    margin-left: 2%;
+    margin-right: 2%;
+
+    &-article {
+      &-slogan {
+        font-size: 4rem;
+        line-height: 7rem;
+      }
+
+      &-description {
+        font-size: 1.7rem;
+
+        &-title {
+          letter-spacing: 0.2rem;
+        }
+        &-text {
+          text-align: justify;
+          line-height: 3rem;
+        }
+      }
+    }
+
+    &-imageandcalluscard {
+      &-image {
+        width: 44rem;
+      }
+
+      &-calluscard {
+        top: 12.5rem;
+        left: 6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .secondarticle {
+    margin-left: 1%;
+    margin-right: 1%;
+
+    &-article {
+      &-slogan {
+        font-size: 2.7rem;
+        line-height: 5rem;
+      }
+
+      &-description {
+        font-size: 1.6rem;
+
+        &-title {
+          letter-spacing: 0.2rem;
+        }
+        &-text {
+          line-height: 2.75rem;
+        }
+      }
+    }
+
+    &-imageandcalluscard {
+      margin-top: 4rem;
+
+      &-image {
+        width: 33rem;
+      }
+
+      &-calluscard {
+        font-size: 2rem;
+        width: 30rem;
+        height: auto;
+        top: 9.5rem;
+        left: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .secondarticle {
+    margin-left: 1%;
+    margin-right: 1%;
+    flex-direction: column;
+    align-items: center;
+
+    &-imageandcalluscard {
+      &-image {
+        width: 33rem;
+      }
+
+      &-calluscard {
+        font-size: 2rem;
+        width: 30rem;
+        height: auto;
+        top: 9.5rem;
+        left: 0.5rem;
+      }
+    }
+
+    &-article {
+      margin-left: 0rem;
+
+      &-slogan {
+        font-size: 2.7rem;
+        line-height: 5rem;
+        text-align: center;
+      }
+
+      &-description {
+        font-size: 1.6rem;
+
+        &-title {
+          letter-spacing: 0.2rem;
+
+          margin-bottom: 0.8rem;
+        }
+        &-text {
+          line-height: 2.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .secondarticle {
+    margin-left: 1%;
+    margin-right: 1%;
+
+    flex-direction: column;
+    align-items: center;
+
+    &-imageandcalluscard {
+      &-image {
+        width: 30rem;
+      }
+
+      &-calluscard {
+        font-size: 2rem;
+        width: 28rem;
+        height: auto;
+        top: 7.5rem;
+        left: 0rem;
+      }
+    }
+
+    &-article {
+      margin-left: 0rem;
+      &-slogan {
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+      }
+
+      &-description {
+        font-size: 1.6rem;
+
+        &-title {
+          letter-spacing: 0.2rem;
+        }
+        &-text {
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,245 @@
+.firstarticlecs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10rem;
+
+  &-article {
+    margin-right: 3rem;
+
+    &-slogan {
+      font-size: 5rem;
+      font-family: "Lora", serif;
+      line-height: 8rem;
+      text-align: left;
+      font-weight: 200;
+
+      &-circle {
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        border: 0.3rem solid #376961;
+        border-radius: 10rem;
+      }
+    }
+
+    &-description {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.8rem;
+      opacity: 0.9;
+
+      &-title {
+        text-align: left;
+        letter-spacing: 0.3rem;
+        font-weight: 700;
+        color: #eb4e27;
+        margin-bottom: 1rem;
+      }
+      &-text {
+        text-align: justify;
+        line-height: 3.3rem;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &-image {
+    &-1 {
+      width: 55rem;
+      height: auto;
+      border-radius: 2.5rem;
+    }
+    &-2 {
+      width: 27.5rem;
+      height: auto;
+      border-radius: 2.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 3441px) {
+  .firstarticlecs {
+    margin-left: 31%;
+    margin-right: 31%;
+  }
+}
+
+@media screen and (max-width: 3440px) and (min-width: 2561px) {
+  .firstarticlecs {
+    margin-left: 27%;
+    margin-right: 27%;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 2108px) {
+  .firstarticlecs {
+    margin-left: 23%;
+    margin-right: 23%;
+  }
+}
+
+@media screen and (max-width: 2107px) and (min-width: 1441px) {
+  .firstarticlecs {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1023px) {
+  .firstarticlecs {
+    margin-left: 2%;
+    margin-right: 2%;
+
+    &-image {
+      &-1 {
+        width: 44rem;
+      }
+
+      &-2 {
+        width: 22rem;
+      }
+    }
+
+    &-article {
+      &-slogan {
+        font-size: 4rem;
+        line-height: 7rem;
+      }
+
+      &-description {
+        font-size: 1.7rem;
+
+        &-title {
+          letter-spacing: 0.2rem;
+        }
+        &-text {
+          text-align: justify;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .firstarticlecs {
+    margin-left: 1%;
+    margin-right: 1%;
+
+    &-image {
+      &-1 {
+        width: 33rem;
+      }
+
+      &-2 {
+        width: 16.5rem;
+      }
+    }
+
+    &-article {
+      &-slogan {
+        font-size: 2.7rem;
+        line-height: 5rem;
+      }
+
+      &-description {
+        font-size: 1.6rem;
+
+        &-title {
+          letter-spacing: 0.2rem;
+        }
+        &-text {
+          line-height: 2.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .firstarticlecs {
+    margin-left: 1%;
+    margin-right: 1%;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &-image {
+      display: flex;
+      flex-direction: column;
+      &-1 {
+        width: 33rem;
+      }
+
+      &-2 {
+        display: none;
+        width: 33rem;
+      }
+    }
+
+    &-article {
+      margin-right: 0rem;
+      &-slogan {
+        font-size: 2.7rem;
+        line-height: 5rem;
+        text-align: center;
+      }
+
+      &-description {
+        font-size: 1.6rem;
+
+        &-title {
+          letter-spacing: 0.2rem;
+        }
+        &-text {
+          line-height: 2.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .firstarticlecs {
+    margin-left: 1%;
+    margin-right: 1%;
+
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-1 {
+        width: 30rem;
+      }
+
+      &-2 {
+        display: none;
+        width: 20rem;
+      }
+    }
+
+    &-article {
+      margin-right: 0rem;
+      &-slogan {
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+      }
+
+      &-description {
+        font-size: 1.6rem;
+
+        &-title {
+          letter-spacing: 0.2rem;
+        }
+        &-text {
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}

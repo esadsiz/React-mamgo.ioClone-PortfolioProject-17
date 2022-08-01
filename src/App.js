@@ -54,7 +54,7 @@ function App() {
             element={<Home hLanguageProps={selectedLanguage.home} />}
           />
           <Route
-            path="casestudy"
+            path="/casestudy"
             element={<CaseStudy csLanguageProps={selectedLanguage.casestudy} />}
           />
           <Route path="*" element={<Navigate to="/" />} />

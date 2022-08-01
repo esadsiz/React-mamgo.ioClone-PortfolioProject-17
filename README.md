@@ -1,4 +1,3 @@
-# 
-# https://www.mamgo.io
+Original # https://www.mamgo.io
 
-[https://mamgoioclone-esadsiz.netlify.app](#real-cool-heading)
+Clone #    https://mamgoioclone-esadsiz.netlify.app
